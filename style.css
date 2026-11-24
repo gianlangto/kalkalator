@@ -1,0 +1,26 @@
+#ulo {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 5px;
+  background-color: #FFFFFFF2;
+  border: 3px solid black;
+}
+
+h1{
+  color: #DC0000;
+}
+
+#ulo{
+  color: #000000;
+}
+
+button{
+  width: fit-content;
+  height: fit-content;
+  background-color: #000000F5;
+  color: #FFFFFF;
+}
+
+div{
+  
+}
