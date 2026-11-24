@@ -1,8 +1,13 @@
+body{
+  background-color: #0C1580;
+}
+
 #ulo {
   width: fit-content;
   height: fit-content;
   padding: 5px 5px;
-  background-color: #FFFFFFF2;
+  background-color: 
+  #00C3FFF2;
   border: 3px solid black;
 }
 

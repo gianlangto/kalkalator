@@ -7,24 +7,32 @@ buttons.forEach(button => {
     event.preventDefault(); //line ni ai 
     const value = button.textContent;
     
-
-    
     if (value === 'C') {
       value1 = '';
+      operator = '';
       display.value = '';
+      
     } else if (value === '-') {
-      // da val
-      alert("hello world");
-    } else if (value === '+'){
       value1 = display.value;
+      operator = '-';
       display.value = '';
-      }else if (value === '=') {
-       let sum = Number(value1) + Number(display.value);
-       display.value = sum;
-    }
-    else {
-          display.value += value;
 
-    }
+      
+    } else if (value === '+') {
+  value1 = display.value;
+  operator = '+';
+  display.value = '';
+      
+    } else if (value === '=') {
+      if (operator === '+') {
+    display.value = Number(value1) + Number(display.value);
+  } else if (operator === '-') {
+    display.value = Number(value1) - Number(display.value);
+  }
+  value1 = '';
+  operator = '';
+} else {
+  display.value += value;
+}
   });
 });
